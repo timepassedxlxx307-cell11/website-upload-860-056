@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片-精品高清影视频道</title>
+  <meta name="description" content="搜索欧美精品高清视频，按片名、地区、类型、标签快速查找精选正版在线播放资源。">
+  <meta name="keywords" content="欧美,精品,高清视频,免费观看,精选,正版,海量,搜索,片名,标签">
+  <link rel="stylesheet" href="assets/original.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="./index.html" aria-label="精品高清影视频道">
+        <span class="logo-mark">▶</span>
+        <span class="logo-text">精品高清影视频道</span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类浏览</a>
+        <a href="./rankings.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+      </nav>
+      <form class="header-search" data-search-form data-prefix="./">
+        <input type="search" name="q" placeholder="搜索影片、类型、标签" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="mobile-toggle" type="button" aria-label="展开导航">☰</button>
+    </div>
+    <div class="mobile-panel">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类浏览</a>
+      <a href="./rankings.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="section-inner">
+        <div class="breadcrumb"><a href="index.html">首页</a> / 搜索</div>
+        <h1>搜索精品高清影视内容</h1>
+        <p>输入片名、年份、地区、类型或标签，快速进入对应影片详情页。</p>
+        <form class="search-box" data-search-form data-prefix="./">
+          <input id="searchInput" type="search" name="q" placeholder="搜索影片标题、类型、标签" aria-label="搜索影片">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+    <section class="section white">
+      <div class="section-inner">
+        <div class="filter-bar">
+          <div class="filter-tags">
+            <a class="filter-tag" href="search.html?q=欧美">欧美</a>
+            <a class="filter-tag" href="search.html?q=剧情">剧情</a>
+            <a class="filter-tag" href="search.html?q=纪录">纪录</a>
+            <a class="filter-tag" href="search.html?q=动画">动画</a>
+            <a class="filter-tag" href="search.html?q=悬疑">悬疑</a>
+          </div>
+          <select class="filter-select" id="sortSelect" aria-label="搜索排序">
+            <option value="relevance">相关度</option>
+            <option value="rating">评分最高</option>
+            <option value="year">最新上映</option>
+          </select>
+        </div>
+        <div id="searchResults"></div>
+      </div>
+    </section>
+    <section class="section soft">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">热门搜索</span>
+            <h2 class="section-title">精选影片直达</h2>
+          </div>
+        </div>
+        <div class="movie-grid">
+        <a class="movie-card" href="movies/movie-0576.html">
+          <div class="poster-wrap">
+            <img src="./126.jpg" alt="6年之痒">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">恋爱六年的情侣准备结婚,却在试婚纱时发现:他们居然都不记得对方的忌口了。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">6年之痒</h3>
+          <p class="card-small">2025 · 中国内地 · 爱情喜剧</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0208.html">
+          <div class="poster-wrap">
+            <img src="./58.jpg" alt="一念风流不了情">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">一场酒后一夜情后,男女主发现对方竟是自己十年前的初恋,而两人都已婚。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">一念风流不了情</h3>
+          <p class="card-small">2025 · 中国内地 · 爱情/喜剧/剧情</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1942.html">
+          <div class="poster-wrap">
+            <img src="./142.jpg" alt="出柙猛虎">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">退役特种兵潜入全球最安全的私人动物园,从老虎领地救出被囚的科学家。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">出柙猛虎</h3>
+          <p class="card-small">2025 · 美国 · 动作/冒险</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0912.html">
+          <div class="poster-wrap">
+            <img src="./12.jpg" alt="别穿越时空了,恋人们">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">男主意外获得穿越能力,却每次回到过去都把事情搞得更糟,女主被迫负责给他善后。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">别穿越时空了,恋人们</h3>
+          <p class="card-small">2025 · 日本 · 科幻,爱情,喜剧</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0669.html">
+          <div class="poster-wrap">
+            <img src="./69.jpg" alt="千万别抬头">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">两个天文学家发现彗星即将毁灭地球,却没人愿意认真听他们说话。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">千万别抬头</h3>
+          <p class="card-small">2025 · 美国 · 喜剧,科幻,讽刺</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1353.html">
+          <div class="poster-wrap">
+            <img src="./3.jpg" alt="外卖骑士">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">首尔的雨夜里,一群外卖员用送餐箱运送着比食物更危险的东西——真相。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">外卖骑士</h3>
+          <p class="card-small">2025 · 韩国 · 剧情、动作</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1290.html">
+          <div class="poster-wrap">
+            <img src="./90.jpg" alt="妈妈的牵挂">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">患阿尔茨海默症的母亲忘记了所有事,唯独记得年轻时未完成的环岛骑行,女儿决定推着轮椅陪她走完这一程。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">妈妈的牵挂</h3>
+          <p class="card-small">2025 · 中国台湾 · 家庭/剧情</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0261.html">
+          <div class="poster-wrap">
+            <img src="./111.jpg" alt="孟加拉虎">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">一支国际雇佣兵受命潜入孟加拉丛林猎杀一只“食人虎”,但他们发现老虎其实是当地部落的复仇之神。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">孟加拉虎</h3>
+          <p class="card-small">2025 · 印度/美国 · 动作/犯罪/政治</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0855.html">
+          <div class="poster-wrap">
+            <img src="./105.jpg" alt="小煤炭商">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">九十年代东北矿区,十岁男孩为了给重病父亲买药,偷偷推着板车去卖散煤。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">小煤炭商</h3>
+          <p class="card-small">2025 · 中国大陆 · 剧情、家庭、社会</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1900.html">
+          <div class="poster-wrap">
+            <img src="./100.jpg" alt="小野田的丛林万夜">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">日本兵小野田在菲律宾丛林里打了29年“永不结束的战争”,直到世界早已忘记他。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">小野田的丛林万夜</h3>
+          <p class="card-small">2025 · 日本 · 战争/剧情</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1991.html">
+          <div class="poster-wrap">
+            <img src="./41.jpg" alt="幸福骗局">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">一家公司公开售卖“定制幸福体验”,买家却接连离奇自杀。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">幸福骗局</h3>
+          <p class="card-small">2025 · 中国大陆 · 悬疑/剧情</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1961.html">
+          <div class="poster-wrap">
+            <img src="./11.jpg" alt="心灵的深夜对话">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">一档深夜电台,三位主持人用“不说教只倾听”的方式,接住每一个破碎的灵魂。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">心灵的深夜对话</h3>
+          <p class="card-small">2025 · 日本 · 剧情,治愈</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1543.html">
+          <div class="poster-wrap">
+            <img src="./43.jpg" alt="战刀屠狼">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">退役特种兵发现弟弟被贩毒集团杀害,他拿起战刀孤身潜入金三角复仇。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">战刀屠狼</h3>
+          <p class="card-small">2025 · 中国大陆 · 动作/战争/热血</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0092.html">
+          <div class="poster-wrap">
+            <img src="./92.jpg" alt="暗恋桃花源">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">台北一个即将拆除的老剧场里,正在排练《暗恋》和《桃花源》的两个剧团,意外共用了同一位女主角。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">暗恋桃花源</h3>
+          <p class="card-small">2025 · 中国台湾 · 剧情,爱情,文艺</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0184.html">
+          <div class="poster-wrap">
+            <img src="./34.jpg" alt="某一天">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">女孩意外获得一本日记,她写下的每一个“某一天”,都会在现实中精准上演。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">某一天</h3>
+          <p class="card-small">2025 · 中国台湾 · 奇幻,爱情</p>
+        </a>
+        <a class="movie-card" href="movies/movie-1375.html">
+          <div class="poster-wrap">
+            <img src="./25.jpg" alt="离开2015">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">一架从2025年飞回2015年的神秘航班,乘客只能带走一样东西——一个记忆片段。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">离开2015</h3>
+          <p class="card-small">2025 · 中国大陆 · 剧情、文艺、科幻</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0134.html">
+          <div class="poster-wrap">
+            <img src="./134.jpg" alt="肝胆雄心">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">刑警队长换了肝癌病人的肝脏后,梦中总出现陌生人的死亡画面。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">肝胆雄心</h3>
+          <p class="card-small">2025 · 中国大陆 · 悬疑/刑侦</p>
+        </a>
+        <a class="movie-card" href="movies/movie-0111.html">
+          <div class="poster-wrap">
+            <img src="./111.jpg" alt="致命伤害">
+            <span class="card-badge">9.8</span>
+            <div class="card-overlay">
+              <p class="line-clamp-3">一场精心策划的车祸后,失忆的凶手发现自己要杀的人,正是二十年前被他灭门的幸存者。</p>
+            </div>
+          </div>
+          <h3 class="movie-title">致命伤害</h3>
+          <p class="card-small">2025 · 中国香港 · 悬疑,犯罪,心理</p>
+        </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h2>精品高清影视频道</h2>
+        <p>提供欧美精品高清视频免费观看服务，支持海量正版资源在线流畅播放，每日更新精选内容推荐栏目。</p>
+      </div>
+      <div>
+        <h3>快速入口</h3>
+        <div class="footer-links">
+          <a href="./index.html">首页推荐</a>
+          <a href="./categories.html">分类浏览</a>
+          <a href="./rankings.html">热门排行榜</a>
+          <a href="./search.html">影片搜索</a>
+        </div>
+      </div>
+      <div>
+        <h3>精选分类</h3>
+        <div class="footer-links">
+        <a href="./category-featured.html">精品推荐</a>
+        <a href="./category-western.html">欧美精选</a>
+        <a href="./category-documentary.html">纪录纪实</a>
+        <a href="./category-drama.html">剧情佳作</a>
+        <a href="./category-action.html">动作冒险</a>
+        <a href="./category-suspense.html">悬疑犯罪</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <script src="./assets/catalog.js"></script>
+  <script src="./assets/site.js"></script>
+</body>
+</html>
